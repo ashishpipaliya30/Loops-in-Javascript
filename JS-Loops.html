@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in Javascript</title>
+</head>
+
+<body>
+    <h1>Loops in Javascript</h1>
+
+    <script>
+        // For loop in JS
+
+        console.log("For loop");
+        let k = 0;
+        for(k=0; k<5; k++){
+            console.log(k);
+        }
+
+        console.log("\n");
+        let frd = ["Mayur", "Haniksh", "Dhaval", "Harshit", "Dhruv"];
+        for (let index = 0; index < frd.length; index++) {
+              console.log("Hello..." + frd[index]);
+        }
+
+
+        // For each loop in JS
+
+        console.log("\n");
+        console.log("For each loop")
+        let friend = ["Mayur", "Haniksh", "Dhaval", "Harshit", "Dhruv"];
+        friend.forEach(function f(element){
+            console.log("Hello..." + element + " to modern JS");
+        });
+
+
+        // For of loop in Js
+
+        console.log("\n");
+        console.log("For in loop")
+        let friends = ["Mayur", "Haniksh", "Dhaval", "Harshit", "Dhruv"];
+        for (element of friends) {
+            console.log("Hello..." + element + " to modern JS again");
+        }
+
+        console.log("\n");
+        let employee = {
+            name: "Ashish",
+            salary: 50000,
+            field: "computer"
+        }
+
+        // This loop is use to iterate over objects in Javascript
+
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        // While loop in JS
+        console.log("\n");
+        console.log("While loop")
+        let i = 0;
+        while (i < 4) {
+            console.log(`${i} i is less than 4`);
+            i++;
+        }
+
+        // Do-While loop in JS
+        console.log("\n");
+        console.log("Do-While loop")
+        let j = 34;
+        do {
+            console.log(`${j} is less than 39`);
+            j++;
+        }
+            while (j < 39);
+
+    </script>
+</body>
+
+</html>
